@@ -1,1 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Play Free Online Games</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">🎮 GameHub</h1>
+                <p class="tagline">Play Amazing Free Games</p>
+            </div>
+        </header>
 
+        <!-- Navigation Tabs -->
+        <nav class="tabs-container">
+            <button class="tab-btn active" data-category="all">All Games</button>
+            <button class="tab-btn" data-category="action">Action</button>
+            <button class="tab-btn" data-category="arcade">Arcade</button>
+            <button class="tab-btn" data-category="puzzle">Puzzle</button>
+            <button class="tab-btn" data-category="racing">Racing</button>
+            <button class="tab-btn" data-category="adventure">Adventure</button>
+        </nav>
+
+        <!-- Games Grid -->
+        <div class="games-container" id="gamesGrid">
+            <!-- Games will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <!-- Game Modal -->
+    <div class="modal" id="gameModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <iframe id="gameFrame" src="" width="100%" height="600px" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
